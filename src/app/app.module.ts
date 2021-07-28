@@ -8,6 +8,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ProfileModule } from './profile/profile.module';
 import { HttpClientModule } from '@angular/common/http';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 const routes: Routes = [
   {
@@ -31,7 +32,8 @@ const config: ExtraOptions = {
     ReactiveFormsModule,
     RouterModule.forRoot(routes, config),
     ProfileModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
