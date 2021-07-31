@@ -15,6 +15,8 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { ReferenceComponent } from './reference/reference.component';
 import { ProjectComponent } from './project/project.component';
 import { ServicesComponent } from './services/services.component';
+import { ProjectsComponent } from './projects/projects.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import { ServicesComponent } from './services/services.component';
     SnotifyModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    NgxPaginationModule
   ],
   declarations: [
     ProfileComponent,
@@ -39,6 +42,7 @@ import { ServicesComponent } from './services/services.component';
     ReferenceComponent,
     ProjectComponent,
     ServicesComponent,
+    ProjectsComponent,
   ],
   providers: [
     { provide: 'SnotifyToastConfig', useValue: ToastDefaults},
