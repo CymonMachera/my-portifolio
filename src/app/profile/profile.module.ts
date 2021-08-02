@@ -15,6 +15,7 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { ReferenceComponent } from './reference/reference.component';
 import { ProjectComponent } from './project/project.component';
 import { ServicesComponent } from './services/services.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ServicesComponent } from './services/services.component';
     SnotifyModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    NgxPaginationModule
   ],
   declarations: [
     ProfileComponent,
