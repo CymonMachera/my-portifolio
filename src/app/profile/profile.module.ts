@@ -13,14 +13,9 @@ import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { ReferenceComponent } from './reference/reference.component';
-import { ProjectComponent } from './project/project.component';
 import { ServicesComponent } from './services/services.component';
-<<<<<<< HEAD
-=======
 import { ProjectsComponent } from './projects/projects.component';
->>>>>>> 5ab3dc3648f414176f38c145f15836997d0f1f12
 import {NgxPaginationModule} from 'ngx-pagination';
-
 
 @NgModule({
   imports: [
@@ -43,7 +38,6 @@ import {NgxPaginationModule} from 'ngx-pagination';
     ExperienceComponent,
     SkillsComponent,
     ReferenceComponent,
-    ProjectComponent,
     ServicesComponent,
     ProjectsComponent,
   ],
