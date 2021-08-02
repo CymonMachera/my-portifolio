@@ -15,6 +15,10 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { ReferenceComponent } from './reference/reference.component';
 import { ProjectComponent } from './project/project.component';
 import { ServicesComponent } from './services/services.component';
+<<<<<<< HEAD
+=======
+import { ProjectsComponent } from './projects/projects.component';
+>>>>>>> 5ab3dc3648f414176f38c145f15836997d0f1f12
 import {NgxPaginationModule} from 'ngx-pagination';
 
 
@@ -41,6 +45,7 @@ import {NgxPaginationModule} from 'ngx-pagination';
     ReferenceComponent,
     ProjectComponent,
     ServicesComponent,
+    ProjectsComponent,
   ],
   providers: [
     { provide: 'SnotifyToastConfig', useValue: ToastDefaults},
