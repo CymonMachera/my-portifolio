@@ -13,7 +13,7 @@ import { environment } from '../../../environments/environment';
   export class ContactComponent implements OnInit {
  
     model: any = {};
-  
+    responseMessage = null
     constructor(
       private http: HttpClient
     ){}
@@ -22,14 +22,14 @@ import { environment } from '../../../environments/environment';
        }
        onSubmit(name, subject, email, message) {
           const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-          this.http.post('https://mailthis.to/cymon',
-            { name: name, _subject: subject, _replyto: email, message: message },{responseType: 'text'})
+          this.http.post('https://formspree.io/f/mknkpoga',
+            { name: name, _subject: subject, _replyto: email, message: message },)
             .subscribe(
               response => {
-                location.href = 'https://mailthis.to/confirm'
+                this.responseMessage = "Thank you, I Will Get Back TO You Soon!!"
                 console.log(response);
               }, error => {
-                console.warn(error.responseText)
+                console.warn("Please Resend the email")
                 console.log({error})
               }
             );
